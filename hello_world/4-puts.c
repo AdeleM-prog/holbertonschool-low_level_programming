@@ -1,12 +1,9 @@
 #include <stdio.h>
-/**
- *int: returning 0 : saying everything is fine
- *main: main function of the program
- *void: no arguments
- *puts: function to display a string
+/*
+ *C program displaying a string
  */
-int main(void)
+int main(void) /*main: main function of the program, with no argument returning an int*/
 {
 puts("\"Programming is like building a multilingual puzzle");
-return (0);
+ return (0); /*return (0): everything worked correctly !*/
 }
