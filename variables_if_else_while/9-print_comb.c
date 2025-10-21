@@ -13,5 +13,6 @@ if (i < 57)
 {
 putchar(',');
 }
+}
 return (0);
 }
