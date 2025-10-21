@@ -9,10 +9,10 @@ int i = 48;
 for (; i <= 57 ; i++)
 {
 putchar(i);
+putchar(' ');
 if (i < 57)
 {
 putchar(',');
-putchar(' ');
 }
 }
 return (0);
