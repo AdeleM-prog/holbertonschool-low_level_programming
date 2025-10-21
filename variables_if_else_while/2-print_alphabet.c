@@ -5,10 +5,10 @@
  */
 int main(void)
 {
-int i = 0;
-for (int i = 0 ; i == 25 ; i++)
+int i = 97;
+for (; i <= 122 ; i++)
 {
-putchar([i])
+putchar(i)
 }
 return (0);
 }
