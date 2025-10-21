@@ -12,8 +12,8 @@ putchar(i);
 if (i < 57)
 {
 putchar(',');
-}
 putchar(' ');
+y}
 }
 return (0);
 }
