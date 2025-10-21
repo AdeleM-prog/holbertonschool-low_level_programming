@@ -11,7 +11,7 @@ for (; i <= 122 ; i++)
 {
 putchar(i);
 }
-for (; j <=90 ; j++)
+for (; j <= 90 ; j++)
 {
 putchar(j);
 }
