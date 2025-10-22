@@ -1,11 +1,15 @@
 #include "main.h"
 /**
- * main - check the code
+ *print_alphabet - affiche l'alphabet
  *
  * Return: Always 0.
  */
-int main(void)
+void print_alphabet(void)
 {
-int _putchar(1, text, 26);
+char c
+for (c = 'a' ; c <= 'z' ; c++)
+_putchar(char c);
+_putchar('\n');
+}
 return (0);
 }
