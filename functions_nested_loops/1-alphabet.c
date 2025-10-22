@@ -6,6 +6,6 @@
  */
 int main(void)
 {
-print_alphabet();
+int _putchar(1, text, 26);
 return (0);
 }
