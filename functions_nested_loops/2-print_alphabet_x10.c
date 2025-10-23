@@ -5,12 +5,14 @@
 * Description: _putchar is used to print alphabet
 * Return: (void)
 */
-print_alphabet_x10(void);
+void print_alphabet_x10(void)
 {
-char alpha[] = "abcdefghijklmnopqrstuvwxyz";
-int i;
-for (i = 0; i < 10; i++)
+int compteur = 0;
+char c;
+for (; compteur < 10; compteur++)
 {
-write(1, alpha, 27);
+for (c = 'a'; c <= 'z'; c++)
+_putchar(c);
+_putchar('\n');
 }
 }
