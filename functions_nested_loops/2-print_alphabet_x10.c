@@ -1,14 +1,16 @@
 #include <unistd.h>
 #include "main.h"
 /**
- *print_alphabet - affiche l'alphabet
- */
-void print_alphabet(void)
+* print_alphabet_x10 - prints alphabet x10 followed by a new line
+* Description: _putchar is used to print alphabet
+* Return: (void)
+*/
+void print_alphabet_x10(void)
 {
-char c;
-for (c = 'a' ; c <= 'z' ; c++)
+char alpha[] = "abcdefghijklmnopqrstuvwxyz";
+int i;
+for (i = 0; i < 10; i++)
 {
-_putchar(c);
+write(1, alpha, 27);
 }
-_putchar('\n');
 }
