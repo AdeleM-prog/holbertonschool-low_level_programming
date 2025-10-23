@@ -5,7 +5,7 @@
 * Description: _putchar is used to print alphabet
 * Return: (void)
 */
-void print_alphabet_x10(void);
+print_alphabet_x10(void);
 {
 char alpha[] = "abcdefghijklmnopqrstuvwxyz";
 int i;
