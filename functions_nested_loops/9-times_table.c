@@ -18,9 +18,7 @@ if (b != 0)
 {
 _putchar(',');
 _putchar(' ');
-}
 if (x < 10)
-{
 _putchar(' ');
 }
 if (x < 10)
