@@ -11,6 +11,6 @@ int i = 48;
 for (; i <= 57 ; i++)
 {
 _putchar(i);
-_putchar('\n');
 }
+_putchar('\n');
 }
