@@ -28,7 +28,7 @@ printf("%d ", a);
 }
 if (a == 100)
 {
-printf("%d\n", a);
+printf("Buzz\n", a);
 }
 return (0);
 }
