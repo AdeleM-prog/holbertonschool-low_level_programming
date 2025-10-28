@@ -22,4 +22,5 @@ else
 printf("%d", a);
 }
 }
+return (0);
 }
