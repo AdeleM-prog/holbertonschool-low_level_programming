@@ -26,7 +26,7 @@ else
 printf("%d ", a);
 }
 }
-for (; a == 100 ; break)
+if (a == 100)
 {
 printf("%d\n", a);
 }
