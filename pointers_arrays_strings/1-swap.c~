@@ -1,0 +1,16 @@
+#include "main.h"
+/**
+ * reset_to_98 - takes a pointer to an int as parameter and
+ * updates the value it points to to 98.
+ * @n: int to update
+ * Return: void
+ */
+void swap_int(int *a, int *b)
+{
+int temp = 0;
+int a;
+int b;
+ *a = temp;
+ *a = *b;
+ *b = temp;
+}
