@@ -23,5 +23,5 @@ s[i + 1] = s[i + 1] - 32;
 }
 }
 }
-return (i);
+return (s);
 }
