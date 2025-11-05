@@ -11,6 +11,6 @@ if (*s == '\0')
 _putchar('\n');
 return;
 }
-_putchar(s[0]);
+_putchar(*s);
 _puts_recursion(s + 1);
 }
