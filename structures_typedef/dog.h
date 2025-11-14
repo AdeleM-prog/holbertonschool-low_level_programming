@@ -1,6 +1,10 @@
 #ifndef DOG
 #define DOG
-
+/**
+ * struct dog - gives structure to dog
+ *
+ * Return: void
+ */
 struct dog
 {
 char *name;
