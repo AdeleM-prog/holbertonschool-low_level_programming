@@ -29,7 +29,7 @@ return (NULL);
 }
 for (i = 0; i <= size1; i++)
 new_dog->name[i] = name[i];
-for ( size2 = 0; owner[size2] != '\0'; size2++)
+for (size2 = 0; owner[size2] != '\0'; size2++)
 {
 }
 new_dog->owner = malloc(size2 + 1);
