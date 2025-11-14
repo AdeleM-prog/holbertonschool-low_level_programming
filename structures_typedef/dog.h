@@ -2,7 +2,9 @@
 #define DOG
 /**
  * struct dog - gives structure to dog
- *
+ * @name : name
+ * @age : age
+ * @owner: owner
  * Return: void
  */
 struct dog
