@@ -1,0 +1,17 @@
+#ifndef DOG
+#define DOG
+
+#include "main.h"
+/**
+ * struct - dog elements
+ *
+ * Return: void
+ */
+struct dog
+{
+char *name;
+float age;
+char *owner;
+};
+
+#endif
