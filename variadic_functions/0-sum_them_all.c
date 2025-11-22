@@ -13,7 +13,7 @@ int sum = 0;
 va_start(args, n);
 for (i = 0; i < n ; i++)
 {
-int vallue = va_arg(args, int);
+int value = va_arg(args, int);
 sum = sum + value;
 }
 va_end(args);
