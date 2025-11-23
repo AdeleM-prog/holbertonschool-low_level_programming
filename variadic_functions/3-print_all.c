@@ -15,8 +15,7 @@ char *str, c;
 double f;
 va_start(args, format);
 while (format && format[i] != '\0')
-{
-printed = 0;
+{printed = 0;
 switch (format[i])
 {
 case 'c':
@@ -36,13 +35,11 @@ printed = 1;
 break;
 case 's':
 str = va_arg(args, char*);
-if (str == NULL)
-printf("(nil)");
-else
-printf("%s", str);
+printf("%s", str ? str : "(nil)");
 printed = 1;
 break;
-default: break;
+default:
+break;
 }
 if (printed == 1 && format[i + 1] != '\0')
 {
