@@ -1,0 +1,21 @@
+#include "lists.h"
+#include <stdlib.h>
+/**
+ * print_list - check the code
+ * @h: pointer to the node to check
+ * Return: number of nodes
+ */
+size_t print_list(const list_t *h)
+{
+size_t nbnodes = 0;
+while (h != NULL)
+{
+if (h->str == NULL)
+printf("[0] (nil)\n");
+else
+printf("[%d] %s\n", h->len, h->str);
+nbnodes++;
+h = h->next;
+}
+return (nbnodes);
+}
