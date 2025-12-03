@@ -32,7 +32,8 @@ h = h->next;
 }
 h->next = new;
 new->n = n;
-new->prev = *h;
+new->prev = h;
 new->next = NULL;
 return (new);
+}
 }
