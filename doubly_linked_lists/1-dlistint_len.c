@@ -1,7 +1,5 @@
 #include "lists.h"
 #include <stdlib.h>
-#include <stdio.h>
-#include <stddef.h>
 /**
  * dlistint_len - returns the number of elements in a linked dlistint_t list
  * @h: pointer to the checked element
@@ -9,7 +7,8 @@
  */
 size_t dlistint_len(const dlistint_t *h)
 {
-size_t nbnodes;
+size_t nbnodes = 0;
+
 while (h != NULL)
 {
 nbnodes++;
