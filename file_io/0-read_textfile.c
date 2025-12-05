@@ -25,7 +25,7 @@ close(fd);
 free(buf);
 return (0);
 }
-nbwrite = write(1, buf, nbread);
+nbwrite = write(STDOUT_FILENO, buf, nbread);
 if (nbwrite != nbread)
 {
 close(fd);
