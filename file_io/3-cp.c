@@ -70,14 +70,19 @@ int main(int argc, char *argv[])
 	    if (nbwrite != nbread)
 	      {
 	      i = 0;
-         while (argv[2][i] != '\0')
+         while (msg3[i] != '\0')
         i++;
 
       size = i;
 	      write(STDERR_FILENO, msg3, size);
-            write(STDERR_FILENO, argv[2], 1);
+while (argv[2][i] != '\0')
+        i++;
+
+      size = i;
+	      write(STDERR_FILENO, argv[2], 1);
             write(STDERR_FILENO, new_line, 1);
 	      exit(99);
+	  }
 	  }
 	if (close(fd_from) == -1)
 	  {
