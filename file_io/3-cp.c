@@ -14,9 +14,11 @@ int main(int argc, char *argv[])
   char *msg4 = "Error: Can't close fd";
   char *new_line = "\n";
   size_t size;
-  char buffer[];
+  ssize_t nbread, nbwrite;
+  char buffer[1024];
   if (argc != 3)
     {
+      i = 0;
       while (msg1[i] != '\0')
 	{
 	i++;
@@ -64,8 +66,17 @@ int main(int argc, char *argv[])
 	nbread = read(fd_from, buffer, 1024);
 	while (nbread > 0)
 	  {
-	    nbwrite(fd_to, buffer, nbread);
+	    nbwrite = write(fd_to, buffer, 1024);
 	    if (nbwrite != nbread)
+	      {
+	      i = 0;
+         while (argv[2][i] != '\0')
+        i++;
+
+      size = i;
+	      write(STDERR_FILENO, msg3, size);
+            write(STDERR_FILENO, argv[2], 1);
+            write(STDERR_FILENO, new_line, 1);
 	      exit(99);
 	  }
 	if (close(fd_from) == -1)
@@ -75,6 +86,8 @@ int main(int argc, char *argv[])
 	      i++;
 	    size = i;
 	    close_fail = write(STDERR_FILENO, msg4, size);
-	    close_fail2 = write(STDERR_FILENO, "fd_from", 1);
-	    close_fail3 = write(STDERR_FILENO, new_line, 1);
+	    dprintf(STDERR_FILENO, "%d\n", fd_from);
+	    exit(100);
+	  }
+	return (0);
 }
