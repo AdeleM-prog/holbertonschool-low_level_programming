@@ -14,7 +14,7 @@ if (*head == NULL)
 return (-1);
 if (index == 0)
 {
-*head = h->next;
+  *head = (*head)->next;
 if (*head != NULL)
 (*head)->prev = NULL;
 free(h);
