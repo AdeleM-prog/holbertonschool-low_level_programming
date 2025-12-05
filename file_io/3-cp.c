@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 int i = 0, fd_from, fd_to;
 char *msg1 = "Usage: cp file_from file_to\n";
 char *msg2 = "Error: Can't read from file";
-char *msg3 = "Error: Can't write to";
+char *msg3 = "Error: Can't write to ";
 char *msg4 = "Error: Can't close fd";
 char *new_line = "\n";
 size_t size;
