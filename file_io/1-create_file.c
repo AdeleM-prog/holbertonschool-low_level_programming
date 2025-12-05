@@ -27,7 +27,7 @@ i++;
 }
 size = i;
 nbwritten = write(file, text_content, size);
-if (nbwritten == size)
+if (nbwritten == i)
 {
 close(file);
 return (1);
