@@ -47,6 +47,5 @@ new->next = ptr;
 ptr->prev->next = new;
 ptr->prev = new;
 }
-}
 return (new);
 }
