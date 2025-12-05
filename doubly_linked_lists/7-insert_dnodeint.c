@@ -14,7 +14,12 @@ unsigned int i = 0;
 dlistint_t *new;
 
 if (*h == NULL)
+{
+if (idx == 0)
+return (add_dnodeint(h, n));
+else
 return (NULL);
+}
 if (idx == 0)
 return (add_dnodeint(h, n));
 while (i < idx)
@@ -24,11 +29,13 @@ return (NULL);
 ptr = ptr->next;
 i++;
 }
-if (i == idx)
+if (ptr == NULL)
 {
-if (ptr->next == NULL)
+if (i == idx)
 return (add_dnodeint_end(h, n));
-
+else
+return (NULL);
+}
 else
 {
 new = malloc(sizeof(dlistint_t));
